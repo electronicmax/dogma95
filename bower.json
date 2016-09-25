@@ -1,0 +1,21 @@
+{
+  "name": "dogma95",
+  "homepage": "https://github.com/electronicmax/dogma95",
+  "authors": [
+    "electronic Max <max@hip.cat>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "skeleton": "^2.0.4",
+    "less": "^2.7.1"
+  }
+}
