@@ -22,4 +22,4 @@ server.key
 .config.json
 html/lib
 project/platforms/*
-www/libs/
+www/lib/
