@@ -26,15 +26,6 @@
 			"publisher":"Open Street Maps",
 			"versions":["1.2.0"],
 			"platforms":["ios","android"]
-		},
-		{
-			"id":"peppapb",
-			"name":"Peppas Paint Box",
-			"category":"Kids",
-			"url":"",
-			"publisher":"Entertainment One",
-			"versions":["1.2.2"],
-			"platforms":["ios","android"]
 		}
 	]
 }
