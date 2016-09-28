@@ -1,0 +1,18 @@
+<div class="main">
+	<div class="section">
+		<h5>Ethical Data Apps Registry</h5>
+	</div>
+	<table class="reglist">
+		<thead>
+			<td>Name</td><td>Platform</td><td>Category</td><td>Publisher</td>
+		</thead>
+		<tbody>
+			<tr ng-repeat="a in apps">
+				<td><a href="{{a.url}}" target="_blank">{{a.name}}</a></td>
+				<td ng-bind="a.platforms"></td>
+				<td ng-bind="a.category"></td>
+				<td ng-bind="a.publisher"></td>
+			</tr>			
+		</tbody>
+	</table>
+</div>

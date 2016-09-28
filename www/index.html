@@ -4,10 +4,14 @@
 		<link rel="stylesheet/less" type="text/css" href="css/dogma95.less" />
 		<link rel="stylesheet" href="lib/skeleton/css/normalize.css" />
 		<link rel="stylesheet" href="lib/skeleton/css/skeleton.css" />		
+		<script type="text/javascript" src="lib/less/dist/less.js"></script>		
+		<script type="text/javascript" src="lib/angular/angular.js"></script>
+		<script type="text/javascript" src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>		
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="lib/lodash/lodash.js"></script>
 		<title>ethical data initiative - dogma 95 for apps</title>
 	</head>
-	<body class="edi">
-		<script type="text/javascript" src="lib/less/dist/less.js"></script>		
+	<body class="edi" ng-app="dogma" ng-controller="main">
 		<div class="navbar">
 			<ul class="navbar-list">
 				<li class="navbar-item"><a class="navbar-link" href="#intro">Intro</a></li>
@@ -18,102 +22,6 @@
 				<li class="navbar-item"><a class="navbar-link" href="#getinvolved">Submit</a></li>
 			</ul>
 		</div>
-
-		<div class="heading">
-			<h1>the ethical data pledge</h1>
-			<h5>for Developers of Apps and Services <br> (inspired by Dogma 95)</h5>
-
-			<img id="logo" src="img/ethical.png" >
-
-			<blockquote>
-				Dogme 95 was an avant-garde filmmaking movement started in 1995 by the Danish directors <a href="https://en.wikipedia.org/wiki/Lars_von_Trier" target="_blank">Lars von Trier</a> and <a href="https://en.wikipedia.org/wiki/Thomas_Vinterberg" target="_blank">Thomas Vinterberg</a>, who created the "Dogme 95 Manifesto" and the "Vow of Chastity" (Danish: kyskhedsløfter). These were rules to create filmmaking based on the traditional values of story, acting, and theme, and excluding the use of elaborate special effects or technology. It was an attempt to take back power for the director as artist, as opposed to the studio.  <div class="source"> -- Wikipedia, <a href="https://en.wikipedia.org/wiki/Dogme_95">Dogma 95</a> </div>
-			</blockquote>
-
-		</div>
-		<div id="intro" class="section">
-			<p>
-				Smartphones have fundamentally changed society. There are over a billion people on this world who use smartphones every day, downloading from among the over 4 million apps available from the two major app marketplaces alone.  
-			</p>
-			<p>	
-				Unfortunately, this technological transition is also simultaneously causing a dark, hidden world to bloom, unbeknownst to most users.  A vast market of personal information has emerged, in which data about people is siphoned through apps, collected, shared and sold, then used for targeted ads, and other forms of coercion and manipulation.  A single app may have hidden in it <a href="http://techscience.org/a/2015103001/" target="_blank">dozens of trackers that send data to third parties</a>. These trackers are not held accountable for the data they collect about people, and are completely invisible. This has become the norm, rather than the exception.
-			</p> 
-			<p>
-				There should be a better way. Trustworthy apps that don't spy on users should be rewarded for their ethical conduct and responsible handling of data.  People should be able to find these apps easily, and be able to use them confident that their data will be used with respect.
-			</p>
-			<p>
-				This is why we are launching the Ethical Personal Data Initiative, a set of standards for allowing app makers to declare that their apps are <i>ethical</i> and to encourage such apps to be developed and adopted by users.
-			</p>
-		</div>
-
-
-		<div class="section" id="principles">
-			<h2>Principles</h2>			
-			The principles of Ethical Data Initiative are as follows:
-			<ul>
-				<li><span class='prin'>No advertising</span> - This means the app or service must not collect or use any data for marketing or advertising purposes itself or via any third party. </li>
-				<li><span class="prin">Proportional</span> - To minimise risk, only data that is of <i>direct</i> or <i>potential use</i> for providing functionality should be collected.
-				</li>
-				<li><span class="prin">Transparent</span> - Full disclosure of third parties that may receive or handle data from the app or service is mandatory.
-				</li>
-				<li><span class="prin">Verifiable</span> -  Apps must either be open source (under a FOSS or related license), or permit reverse-engineering or instrumentation allow neutral third parties to validate compliance.</li>
-				<li><span class="prin">Controllable</span> - Where possible, integration with third party services should be able to be entirely disabled by end-users.</li>
-			</ul>
-
-			<p>	These requirements are meant to represent a minimal set of guidelines for apps that behave responsibly with the handling of user data. </p>
-
-			<p>The following additional optional but strongly recommended points pertain to future-proofing apps to ensure people can easily continue to use the data that they have put into an app after its use, and data removal. </p>
-
-			<ul>
-				<li><span class="prin">No Lock-In</span> -  Apps must allow users to take their data with them when they cease use of the service for any reason. </li>
-				<li><span class="prin">Delete Me</span> - Apps must comply (to the extent possible) with requests from users to remove data about them.</li>
-			</ul>
-
-			<p></p>
-		</div>
-		<div class="section" id="justiication">
-			<h2>Justification</h2>			
-
-			<p>
-				Many other ethical frameworks pertaining to apps and the use of data, such as <a href="http://www.fairdata.org.uk/" target="_blank">Fair Data</a> have been proposed. 
-			</p>
-			<p>
-				Our guidelines are unique in two ways. First, it's focused specifically on data handling and use aspects, not other aspects or ethical considerations.  For instance, this framework does not evaluate the ethics of what an app <i>does</i> to society, what activities it <i>fosters or enables</i>, nor even how the app was developed nor how resources used by the app were obtained.
-			</p>
-			<p>
-				Second, they are designed to be <i>clear</i>, <i>unambiguous</i>, <i>objective evaluable</i>, <i>actionable</i>, and target the designers and developers of apps and services.
-			</p>
-			<p>
-				None of the aforementioned frameworks meets these requirements.
-			</p>
-			<!--
-			<h4>Why not reuse X framework?</h4>
-
-			<h4>Why not <i>some</i> advertising?</h4>
-			-->
-
-		</div>
-		<div class="section" id="apps">
-			<h2>Apps</h2>
-			<p>
-				We are reviewing apps by hand for inclusion in our Ethical Data App Gallery.
-			</p>
-			<ul class="options">
-				<li><button onclick="location.href='google.com';">App Registry</button></li>
-				<li><button onclick="location.href='google.com';">Website Registry</button></li>
-			</ul>
-		</div>
-		<div class="section" id="getinvolved">
-			<h2>Get Involved &amp; Submit Apps</h2>
-
-			This volunteer movement is only possible if people help! We need people to help
-			vet apps, spread the word, among many other things.
-
-			<ul class="options">
-				<li><button onclick="location.href='https://goo.gl/forms/SXTGn12gypDzqV6S2';">Submit an App</button></li>
-				<li><button onclick="location.href='https://goo.gl/forms/SXTGn12gypDzqV6S2';">Help Review Apps</button></li>
-				<li><button onclick="location.href='https://goo.gl/forms/SXTGn12gypDzqV6S2';">Get Involved</button></li>
-			</ul>
-		</div>
-
+		<div ui-view/>
 	</body>
 </html>
