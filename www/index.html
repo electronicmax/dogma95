@@ -14,12 +14,12 @@
 	<body class="edi" ng-app="dogma" ng-controller="main">
 		<div class="navbar">
 			<ul class="navbar-list">
-				<li class="navbar-item"><a class="navbar-link" href="#intro">Intro</a></li>
-				<li class="navbar-item"><a class="navbar-link" href="#principles">Principles</a></li>
-				<li class="navbar-item"><a class="navbar-link" href="#justification">Justification</a></li>
-				<li class="navbar-item"><a class="navbar-link" href="#apps">Apps</a></li>
-				<li class="navbar-item"><a class="navbar-link" href="#getinvolved">Get Involved</a></li>
-				<li class="navbar-item"><a class="navbar-link" href="#getinvolved">Submit</a></li>
+				<li class="navbar-item"><a class="navbar-link" ui-sref="main({a:'intro'})">Intro</a></li>
+				<li class="navbar-item"><a class="navbar-link" ui-sref="main({a:'principles'})">Principles</a></li>
+				<li class="navbar-item"><a class="navbar-link" ui-sref="main({a:'justification'})">Justification</a></li>
+				<li class="navbar-item"><a class="navbar-link" ui-sref='registry'>Apps</a></li>
+				<li class="navbar-item"><a class="navbar-link" ui-sref="main({a:'getinvolved'})">Get Involved</a></li>
+				<li class="navbar-item"><a class="navbar-link" ui-sref="main({a:'getinvolved'})">Submit</a></li>
 			</ul>
 		</div>
 		<div ui-view/>

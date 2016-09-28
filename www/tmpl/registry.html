@@ -1,13 +1,21 @@
 <div class="main">
 	<div class="section">
 		<h5>Ethical Data Apps Registry</h5>
+		<p>
+			The following apps have been verified by volunteers as complying
+			with the Ethical Data Pledge.  To add your app to the list,
+			complete the form below.
+		</p>
 	</div>
 	<table class="reglist">
 		<thead>
 			<td>Name</td><td>Platform</td><td>Category</td><td>Publisher</td>
 		</thead>
 		<tbody>
-			<tr ng-repeat="a in apps">
+			<tr ng-repeat-start="a in apps" ng-if='a.section' class='sectional'>
+				<td colspan=4 ng-bind='a.section'></td>
+			</tr>
+			<tr ng-repeat-end>
 				<td><a href="{{a.url}}" target="_blank">{{a.name}}</a></td>
 				<td ng-bind="a.platforms"></td>
 				<td ng-bind="a.category"></td>
