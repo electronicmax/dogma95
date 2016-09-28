@@ -60,7 +60,7 @@
 			<dt class="prin">Delete Me</dt>
 			<dd>Apps must comply (to the extent possible) with requests from users to remove data about them.</dd>
 		</dl>
-		
+
 	</div>
 	<div class="section" id="justification">
 		<h2>Justification</h2>			
@@ -96,7 +96,9 @@
 			<tbody>
 				<tr ng-repeat="a in apps">
 					<td><a href="{{a.url}}" target="_blank">{{a.name}}</a></td>
-					<td ng-bind="a.platforms"></td>
+					<td class='platforms'>
+						<div ng-repeat="(p,url) in a.platforms"><a href="{{url}}" target="_blank" ng-bind="p"></a></div> 
+					</td>
 					<td ng-bind="a.category"></td>
 					<td ng-bind="a.publisher"></td>
 				</tr>			

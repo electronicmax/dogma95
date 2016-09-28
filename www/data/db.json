@@ -7,7 +7,10 @@
 			"url":"http://lifecour.se",
 			"publisher":"LifeCourse",
 			"versions":["1.3.0"],
-			"platforms":["ios","android"]			
+			"platforms":{
+				"ios":"https://itunes.apple.com/ky/app/lifecourse-afinity/id918973930?mt=8",
+				"android":"https://play.google.com/store/apps/details?id=com.pinch_medical.afinity&hl=en_GB"
+			}
 		},
 		{
 			"id":"hyten",
@@ -16,16 +19,17 @@
 			"url":"http://lifecour.se",
 			"publisher":"LifeCourse",
 			"versions":["1.3.0"],
-			"platforms":["ios","android"]
+			"platforms":{
+				"ios":"https://itunes.apple.com/ky/app/lifecourse-hyten/id1147434223?mt=8"
+			}
 		},
 		{
 			"id":"osm",
-			"name":"OpenStreetMaps",
+			"name":"OpenMaps",
 			"category":"Mapping",
-			"url":"",
+			"url":"https://itunes.apple.com/gb/app/openmaps/id359719250?mt=8",
 			"publisher":"Open Street Maps",
-			"versions":["1.2.0"],
-			"platforms":["ios","android"]
+			"versions":["1.2.0"]
 		}
 	]
 }

@@ -12,9 +12,6 @@ angular.module('dogma', ['ui.router'])
 			},
 			controller:function($scope, $stateParams, $anchorScroll, apps) {
 				$scope.apps = apps;
-				$scope.apps.map((a) => {
-					a.platforms = a.platforms.join('; ');
-				});
 				if ($stateParams.a) { $anchorScroll($stateParams.a); }
 				window._s = $scope;
 			}
@@ -29,7 +26,7 @@ angular.module('dogma', ['ui.router'])
 				$scope.apps = _(apps).sortBy(function(x) { return x.category + "-" + x.name; }).value();
 				var lastCat;
 				$scope.apps.map((a) => {
-					a.platforms = a.platforms.join('; ');
+					// a.platforms = a.platforms.join('; ');
 					if (lastCat !== a.category) { 
 						a.section = a.category; 
 						lastCat = a.category;
