@@ -29,6 +29,20 @@ angular.module('dogma', ['ui.router'])
 				$scope.apps.map((a) => {
 					a.platforms = a.platforms.join('; ');
 				});
+
+                             $scope.medscats = _.chain($scope.meds).sortBy(function (med) {
+                                // console.log('sortby ', med.lcatlabel + ':' + med.lname)
+                                return med.category + ':' + med.lname;
+                            }).map(function (med) {
+                                var section = med.catlabel;
+                                if (section !== lastSection) {
+                                    lastSection = section;
+                                } else {
+                                    section = '';
+                                }
+                                return _.extend({ section: section }, med);
+                            }).value();
+				
 			}
 		});
 	}).controller('main', function() { 
