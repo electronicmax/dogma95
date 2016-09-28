@@ -20,7 +20,8 @@
 			"publisher":"LifeCourse",
 			"versions":["1.3.0"],
 			"platforms":{
-				"ios":"https://itunes.apple.com/ky/app/lifecourse-hyten/id1147434223?mt=8"
+				"ios":"https://itunes.apple.com/ky/app/lifecourse-hyten/id1147434223?mt=8",
+				"android":"https://play.google.com/store/apps/details?id=com.pinch_medical.htn"
 			}
 		},
 		{
